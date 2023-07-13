@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contacto from './components/Pages/Contacto.jsx';
 import App from './App.jsx';
@@ -9,7 +9,7 @@ import Alquiler from './components/Pages/Alquiler.jsx';
 import DetallesAlquiler from './components/Pages/DetallesAlquiler.jsx';
 import DetallesVentas from './components/Pages/DetallesVentas.jsx';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
@@ -20,5 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/Alquieres/:id" element={<DetallesAlquiler />} />
       <Route path="/Ventas/:id" element={<DetallesVentas />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
+  document.getElementById('root')
 );
