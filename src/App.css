@@ -23,7 +23,7 @@ body {
     height: 44.4rem;
     width: 100%;
     object-fit: cover;
-    background-color: black;
+    background-color: black !important;
 }
 
 .text-container {
@@ -32,7 +32,7 @@ body {
     align-items: center;
     height: 45rem !important;
     font-size: 100px;
-    color: rgb(132, 132, 132) !important;
+    color: rgb(255, 255, 255) !important;
     opacity: calc(90%)
 }
 
