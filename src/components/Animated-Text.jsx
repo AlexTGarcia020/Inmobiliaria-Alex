@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const AnimatedText = () => {
-  const texts = ["Ventas", "Alquileres", "Administraciónes", "Asesoramiento"];
+  const texts = ["Ventas", "Alquileres", "Administraciones", "Asesoramientos"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
