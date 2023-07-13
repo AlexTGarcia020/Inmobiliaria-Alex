@@ -1,9 +1,34 @@
-import React from "react";
-import Footer from "../Footer";
-import NavBar from "../Navbar";
-import "../../assets/Contacto.css";
+import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../Footer';
+import NavBar from '../Navbar';
+import '../../assets/Contacto.css';
 
 function Contacto() {
+  const [nombre, setNombre] = useState('');
+  const [apellido, setApellido] = useState('');
+  const [email, setEmail] = useState('');
+  const [telefono, setTelefono] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (nombre === '' || apellido === '' || email === '' || telefono === '') {
+      toast.error('Debes completar todos los campos');
+      return;
+    }
+
+    // Aquí puedes agregar la lógica para enviar el formulario a través de Formspree o cualquier otro servicio de envío de correo electrónico
+    console.log('Formulario enviado');
+
+    // Limpiar los campos del formulario después de enviarlo
+    setNombre('');
+    setApellido('');
+    setEmail('');
+    setTelefono('');
+  };
+
   return (
     <div>
       <NavBar />
@@ -12,50 +37,90 @@ function Contacto() {
           <div className="contact-container">
             <h2 className="contact-title fs-2">¿Te gustaría obtener más información?</h2>
             <p className="fs-6">Completa los siguientes datos para ponernos en contacto.</p>
-            <form className="row g-3 mt-1 contact-form">
+            <form className="row g-3 mt-1 contact-form" action="https://formspree.io/f/xaygyvjq" method="POST" onSubmit={handleSubmit}>
               <div className="col-md-6">
                 <label htmlFor="inputEmail4" className="form-label">
                   Nombre
                 </label>
-                <input type="name" className="form-control" id="inputEmail4" placeholder="Ej: Claudio" />
+                <input
+                  type="text"
+                  className="form-control"
+                  id="inputEmail4"
+                  name="nombre"
+                  placeholder="Ej: Claudio"
+                  value={nombre}
+                  onChange={(e) => setNombre(e.target.value)}
+                  required
+                />
               </div>
               <div className="col-md-6">
                 <label htmlFor="inputPassword4" className="form-label">
                   Apellido
                 </label>
-                <input type="lastname" className="form-control" id="inputPassword4" placeholder="Ej: De Martini" />
+                <input
+                  type="text"
+                  className="form-control"
+                  id="inputPassword4"
+                  name="apellido"
+                  placeholder="Ej: De Martini"
+                  value={apellido}
+                  onChange={(e) => setApellido(e.target.value)}
+                  required
+                />
               </div>
               <div className="col-12">
                 <label htmlFor="inputAddress2" className="form-label">
                   Email
                 </label>
-                <input type="email" className="form-control" id="inputAddress2" placeholder="Ej: Correo@gmail.com" />
+                <input
+                  type="email"
+                  className="form-control"
+                  id="inputAddress2"
+                  name="email"
+                  placeholder="Ej: Correo@gmail.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
               </div>
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">
                   Telefono
                 </label>
-                <input type="phone" className="form-control" id="inputAddress" placeholder="Ej: (+598) 097262731" />
+                <input
+                  type="tel"
+                  className="form-control"
+                  id="inputAddress"
+                  name="telefono"
+                  placeholder="Ej: (+598) 097262731"
+                  value={telefono}
+                  onChange={(e) => setTelefono(e.target.value)}
+                  required
+                />
               </div>
-              <div style={{marginTop:"2.9rem"}} className="col-12 d-flex align-items-center">
-                <h4 className="fs-6">Al completar este formulario, uno de nuestros trabajadores se pondrá en contacto a la brevedad. ¡Gracias por tu interés!</h4>
-                <button className="button-contacto-over ms-2">Enviar<span className="ms-2 fs-5" role="img" aria-label="up-right-arrow">&#8599;</span></button>
+              <div style={{ marginTop: '2.9rem' }} className="col-12 d-flex align-items-center">
+                <h4 className="fs-6">
+                  Al completar este formulario, uno de nuestros trabajadores se pondrá en contacto a la brevedad. ¡Gracias por tu interés!
+                </h4>
+                <button className="button-contacto-over ms-2" type="submit">
+                  Enviar<span className="ms-2 fs-5" role="img" aria-label="up-right-arrow">
+                    &#8599;
+                  </span>
+                </button>
               </div>
             </form>
           </div>
         </div>
-         <div  className="col-md-6">
-            <div className="contact-container-two">
-            {/* <h6 className="text-contact">
-                Acosta y De Martini Propiedades es una empresa líder en el mercado inmobiliario, dedicada a brindar soluciones de calidad y personalizadas para la compra, venta y alquiler de propiedades. Con un enfoque centrado en la satisfacción del cliente, nos esforzamos por entender las necesidades únicas de cada cliente y ofrecer un servicio excepcional.
-                </h6> */}
-                <div className="image-container-a">
-                <img src="/Contacto.jpg" className="rounded img-contact"></img>
-                </div>
+        <div className="col-md-6">
+          <div className="contact-container-two">
+            <div className="image-container-a">
+              <img src="/Contacto.jpg" className="rounded img-contact" alt="Contacto" />
             </div>
-            </div> 
+          </div>
+        </div>
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

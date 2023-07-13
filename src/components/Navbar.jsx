@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <Navbar className="navbar-home" bg="white" variant="white" expand="lg" expanded={expanded} onToggle={handleNavbarToggle}>
       <div className="container-fluid">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="">
           <span className="d-flex align-items-center">
            <Link style={{textDecoration:"none"}} to={"/"}>
             <img
