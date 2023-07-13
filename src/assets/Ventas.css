@@ -127,3 +127,21 @@
         flex-direction: column !important;
     }
   }
+
+  
+@media (min-width: 1000px) {
+
+    .container-cards {
+        position: relative !important;
+        padding-right: 10px !important;
+        display: flex !important;
+        gap: 60px !important;
+    }
+    .card-product {
+        width: 350px !important;
+        gap: 60px !important;  
+    }
+    .review-container{
+        font-size: 15px;
+    }
+  }

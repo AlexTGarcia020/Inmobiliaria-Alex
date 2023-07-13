@@ -116,3 +116,19 @@
       position: sticky !important;
   }
   }
+
+  @media (max-width: 1300px) {
+    .dividor-nosotros {
+      width: 440px !important;
+    }
+    .image-container {
+      padding-right: 115px;
+      position: sticky !important;
+    }
+    .seal-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px !important;
+    }
+  }

@@ -70,7 +70,7 @@
 
 
   
-  @media (max-width: 991px) {
+  @media (max-width: 1000px) {
     .navbar-home .navbar-collapse {
       justify-content: center;
       text-align: center;
@@ -96,6 +96,11 @@
   
     .group-links {
       margin-right: 150px !important;
+    }
+
+    .button-contacto {
+      position: relative;
+      left: 50px;
     }
   }
   

@@ -138,3 +138,32 @@
       width: 100px;
     }
   }
+
+  @media (max-width: 1200px) {
+    .detalles-alquiler-container {
+      padding-left: 30px;
+      padding-right: 30px;
+      min-height: 300px !important;
+    }
+
+    .detail-list {
+      display: flex;
+    } 
+  
+    .detail-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .detail-icon {
+      margin-right: 0.5rem;
+    }
+
+    .alquiler-image {
+      height: 400px;
+      object-fit: cover !important;
+      width: 100px;
+      border-radius: 0 !important;
+    }
+  }
