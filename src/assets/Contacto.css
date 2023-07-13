@@ -17,7 +17,7 @@
   
 
   .contact-container-two {
-    margin-top: 2rem !important;
+    margin-top: 3.3rem !important;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 0.5rem;
@@ -29,13 +29,13 @@
   }
   
   
-  .image-container {
+  .image-container-two {
     margin-top: 1rem;
     text-align: center;
   }
   
-  .image-container img {
-    max-width: 101%;
+  .image-container-a img {
+    max-width: 103% !important;
     height: 30.3rem;
   }
   
@@ -60,4 +60,15 @@
     font-family: 'Chakra Petch', sans-serif;
     border-radius: 12px !important;
     padding: 8px 30px 8px 30px;
+}
+
+@media (max-width: 767px) {
+  .img-contact {
+    width: 50rem !important;
+    height: 250px !important;
+  }
+
+  .image-container-a {
+    max-width: 100% !important;
+  }
 }

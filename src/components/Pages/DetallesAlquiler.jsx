@@ -61,6 +61,7 @@ function DetallesAlquiler() {
           </div>
           <div className="detalles-alquiler-body">
           <Carousel
+            className='Carrousel-Details'
             showThumbs={false}
             showStatus={false}
             showIndicators={false}

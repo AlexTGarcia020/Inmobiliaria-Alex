@@ -79,3 +79,29 @@
     margin-top: 0.5rem;
     font-size: 14px;
   }
+
+  @media (max-width: 767px) {
+    .image-container {
+      width: 250px;
+      height: auto;
+      position: sticky !important;
+  }
+    .seal-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px !important;
+    }
+    
+    .seal-container-two {
+      gap: 62px !important;
+    }
+
+    .dividor-nosotros {
+      width: 310px !important;
+    }
+
+    .seal-container .seal {
+      margin: 10px 0;
+    }
+  }

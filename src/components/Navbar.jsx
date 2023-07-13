@@ -15,11 +15,13 @@ function NavBar() {
       <div className="container-fluid">
         <Navbar.Brand href="#">
           <span className="d-flex align-items-center">
+           <Link style={{textDecoration:"none"}} to={"/"}>
             <img
               className="img-logo-navbar"
               src="/img/LogoSVG.png"
               alt="Logo-Inmobiliaria"
             />
+            </Link>
             <p className="ms-3 mb-0 logo-text">
               Inmobiliaria<br />Acosta Y De Martini
             </p>

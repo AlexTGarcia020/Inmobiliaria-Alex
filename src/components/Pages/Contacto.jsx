@@ -29,7 +29,7 @@ function Contacto() {
                 <label htmlFor="inputAddress2" className="form-label">
                   Email
                 </label>
-                <input type="email" className="form-control" id="inputAddress2" placeholder="Ej: acostademartinipropiedades@gmail.com" />
+                <input type="email" className="form-control" id="inputAddress2" placeholder="Ej: Correo@gmail.com" />
               </div>
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">
@@ -49,7 +49,7 @@ function Contacto() {
             {/* <h6 className="text-contact">
                 Acosta y De Martini Propiedades es una empresa líder en el mercado inmobiliario, dedicada a brindar soluciones de calidad y personalizadas para la compra, venta y alquiler de propiedades. Con un enfoque centrado en la satisfacción del cliente, nos esforzamos por entender las necesidades únicas de cada cliente y ofrecer un servicio excepcional.
                 </h6> */}
-                <div className="image-container">
+                <div className="image-container-a">
                 <img src="/Contacto.jpg" className="rounded img-contact"></img>
                 </div>
             </div>

@@ -20,7 +20,7 @@ function App() {
           </div>
         </div>
       </div>
-        <div className="seal-container-two">                  
+        <div className="seal-container-two-1">                  
            <Link style={{textDecoration:"none"}} to="/Ventas">
              <div className="seal">
                <img className='seal-img-home' src="/img/Home.png" alt="home.icono" />

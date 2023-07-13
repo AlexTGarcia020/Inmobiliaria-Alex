@@ -110,3 +110,31 @@
     background-color: rgba(255, 255, 255, 0.8);
   }
   
+  @media (max-width: 767px) {
+    .detalles-alquiler-container {
+      padding-left: 30px;
+      padding-right: 30px;
+      min-height: 300px !important;
+    }
+
+    .detail-list {
+      display: flex;
+      flex-direction: column;
+    } 
+  
+    .detail-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .detail-icon {
+      margin-right: 0.5rem;
+    }
+
+    .alquiler-image {
+      height: 400px;
+      object-fit: cover !important;
+      width: 100px;
+    }
+  }

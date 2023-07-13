@@ -98,9 +98,22 @@
     padding: .5em .8em;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (max-width: 767px){
     .card-product {
-        width: 350px;
-        margin: 0 auto;
+        width: 350px !important;  
+        margin-right: 50px !important;
+        display: flex !important;
+        flex-direction: column !important;
+       
     }
+    .container-cards {
+        position: relative;
+        right: 15px;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .review-container{
+        font-size: 15px;
+    }
+  
 }
