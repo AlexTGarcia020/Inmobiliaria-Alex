@@ -10,7 +10,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className='home'>
+    <div className=''>
       <NavBar/>
       <div className="hero">
         <video src="/img/Hero-2.mp4" className="video-hero" autoPlay loop muted></video>
