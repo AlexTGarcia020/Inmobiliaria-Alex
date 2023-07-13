@@ -78,7 +78,8 @@ body {
 
     .seal-container-two {
       margin-top: 10rem !important;
-      gap: 0px !important;
+      margin-bottom: 0% !important;
+      gap: -10px !important;
       display: flex !important;
       flex-direction: column !important;
     }
