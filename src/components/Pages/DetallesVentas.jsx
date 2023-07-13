@@ -6,6 +6,7 @@ import { MdLocalHotel, MdBathtub, MdKitchen, MdWeekend, MdLocalLaundryService, M
 import '../../assets/DetallesAlquier.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 
 function DetallesVentas() {
   const { id } = useParams();
@@ -125,7 +126,9 @@ function DetallesVentas() {
             </ul>
             <hr className='mt-3 mb-4'/>
             <div className='d-flex justify-content-center'>
-            <button className="button-contacto-over w-100 ms-2">Más Información!<span className="ms-2 fs-5" role="img" aria-label="up-right-arrow">&#8599;</span></button>
+            <Link to="/Contacto">
+            <button className="button-contacto-over w-100 ms-2">Más Información!</button>
+            </Link>
             </div>
           </div>
         </div>
