@@ -99,6 +99,19 @@
   }
   
   @media (max-width: 767px) {
+    .navbar-home .button-contacto {
+        margin-top: 15px;
+        align-items: center !important;
+        width: 300px;
+        margin-right: 40px !important;
+        position: relative;
+        right: 5px;
+      }
+    
+      .group-links {
+        margin-right: 120px !important;
+      }
+
     .navbar-home .navbar-nav {
       margin-top: 10px;
     }
