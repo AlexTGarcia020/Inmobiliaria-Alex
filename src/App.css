@@ -80,7 +80,32 @@ body {
 
 
   @media (max-width: 767px) {
+    .animated-text {
+
+      font-family: 'Tangerine', cursive !important; 
+        animation: fade 4s infinite;
+        opacity: 0;
+      }
+      
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
     .hero {
+      position: relative;
       height: calc(100vh - 200px) !important;
     }
     

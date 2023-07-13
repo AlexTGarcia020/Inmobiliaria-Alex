@@ -13,7 +13,7 @@ function App() {
     <div className=''>
       <NavBar/>
       <div className="hero">
-        <video src="/img/Hero-12.mp4" className="video-hero" autoPlay loop muted></video>
+        <video src="/img/Hero-12.mp4" playsInline className="video-hero" preload='true' autoPlay loop muted></video>
         <div className="text-overlay">
           <div className="text-container d-flex justify-content-center align-items-center">
             <AnimatedText />
