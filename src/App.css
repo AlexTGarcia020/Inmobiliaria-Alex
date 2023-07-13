@@ -23,7 +23,7 @@ body {
     height: 44.4rem;
     width: 100%;
     object-fit: cover;
-    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(179, 187, 190) 90%);
+    background-color: black;
 }
 
 .text-container {
