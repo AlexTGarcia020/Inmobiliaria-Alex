@@ -1,0 +1,106 @@
+.container-card-product-all{
+    display: grid;
+    place-items: center;
+    height: 30em;
+    margin: 0rem;
+    flex-basis: calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem); 
+}
+
+.card-product {
+    width: 400px !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1.2em;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+
+.content-product-all {
+    background: #fff;
+    margin: 0em;
+    border-end-start-radius: 1.2em;
+    border-end-end-radius: 1.2em;
+    margin-bottom: 1px;
+}
+
+.img-product-all {
+    width: 100%;
+    display: inline-block !important;
+    height: 300px;
+    border-radius: 1.2em 1.2em 0 0;
+    object-fit: fill !important;
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .6em;
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 18px;
+    background-color: transparent !important;
+}
+
+
+#title-reviews {
+    font-size: 1em;
+}
+
+.product-shop-cart {
+    font-size: .95em;
+    margin: 0 !important;
+}
+
+.name-product-all, .price-product-all {
+    font-size: 1.2em !important;
+    color: black !important;
+    font-weight: bolder !important;
+    padding-left: 20px !important;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+.description-all-product {
+    margin: .7em 1em;
+}
+
+.button-container-product-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 1em;
+}
+
+.card-button-product-all{
+    display: flex;
+    align-items: center;
+    background: #bfbfbf;
+    padding: .3em;
+    border-radius: .3em;
+    cursor: pointer;
+    margin-left: 51px !important;
+    margin-bottom: 10px;
+}
+
+
+.cart-icon-product-all, .card-button-product-all p , .like-button-all {
+    padding: .5em .8em;
+}
+
+@media screen and (min-width: 500px){
+    .card-product {
+        width: 350px;
+        margin: 0 auto;
+    }
+}

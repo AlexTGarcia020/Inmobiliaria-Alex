@@ -1,0 +1,81 @@
+.text-contact {
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+.contact-container {
+    margin-top: 6% !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact-container-two-two {
+    margin-top: 5% !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px !important;
+  }
+  
+  
+  .image-container {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .image-container video {
+    max-width: 100%
+  }
+  
+  .leaflet-container {
+    border-radius: 12px;
+  }
+
+  .seal-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .seal-container-two {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 255px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .seal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dividor-nosotros {
+    margin-left: 45px !important;
+    width: 89% !important;
+  }
+
+  .seal img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .seal span {
+    margin-top: 0.5rem;
+    font-size: 14px;
+  }
