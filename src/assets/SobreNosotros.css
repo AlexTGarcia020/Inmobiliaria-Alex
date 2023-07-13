@@ -24,6 +24,7 @@
   .image-container {
     margin-top: 1rem;
     text-align: center;
+    position: sticky !important;
   }
   
   .image-container video {
