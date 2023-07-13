@@ -30,7 +30,7 @@
   }
 
   .footer {
-    padding: 50px 50px 20px 0px !important;
+    padding: 50px 50px 15px 0px !important;
   }
 
   .contact-footer {
@@ -46,7 +46,7 @@
 
   .footer-text {
     font-size: 12px !important;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-right: -10px;
   }
 }
