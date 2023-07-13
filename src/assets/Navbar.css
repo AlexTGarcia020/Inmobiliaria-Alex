@@ -138,3 +138,25 @@
     }
   }
   
+  @media (max-width: 400px) {
+    .logo-text {
+      padding: 0% !important;
+      margin: 0% !important;
+      font-size: 15px !important;
+    }
+    .navbar-toggler {
+      position: relative;
+      top: -50px;
+      left: 250px; 
+      margin-bottom: -10px;
+    }
+    .button-contacto {
+      padding-right: 12px !important;
+      left: -10px !important;
+    }
+
+    .group-links {
+      position: relative;
+      left: -10px !important;
+    }
+  }

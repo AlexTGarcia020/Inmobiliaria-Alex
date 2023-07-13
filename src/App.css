@@ -93,3 +93,10 @@ body {
       flex-direction: column !important;
     }
   }
+
+  @media (max-width: 400px) {
+    .seal-container-two-1 {
+      gap: -220px !important;
+      margin-top: 10px !important;
+    }
+  }

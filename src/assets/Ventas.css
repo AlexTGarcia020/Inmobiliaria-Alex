@@ -117,3 +117,13 @@
     }
   
 }
+
+@media (max-width: 400px) {
+
+    .container-cards {
+        position: relative !important;
+        right: 30px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+  }
