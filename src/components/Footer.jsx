@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import "../assets/Footer.css"
 import { Link } from "react-router-dom";
 
@@ -9,16 +9,24 @@ function Footer () {
         <footer className="footer bg-white text-white">
       <div className="">
         <div className="row">
+          
           <div className="col-lg-4">
             <img src="/img/Footer-Logo.png" alt="Logo" className="footer-logo" />
           </div>
+          
           <div className="col-lg-4 contact-footer">
-          <span className="material-symbols-outlined">
-            contacts
+            <span className="material-symbols-outlined mb-1">
+              contacts
+            <Link to="https://www.instagram.com/inmobiliariaacostaydemartini/" style={{ color: "white", textDecoration: "none" }}>
+              <FontAwesomeIcon className="px-2 fs-4 ms-1 icons-footer-2" icon={faInstagram} />
+            </Link>
+            <Link to="https://api.whatsapp.com/send?phone=97262731" style={{ color: "white", textDecoration: "none" }}>
+              <FontAwesomeIcon className="px-2 fs-4 icons-footer" icon={faWhatsapp} />
+            </Link>
             </span>
-            <h5 className="">Contacto</h5>
-            <p className="">Teléfono: (+598) 097262731</p>
-            <p className="">Email: acostademartinipropiedades@gmail.com</p>
+            <h5>Contacto</h5>
+            <p>Teléfono: (+598) 097262731</p>
+            <p>Email: acostademartinipropiedades@gmail.com</p>
             {/* <p className="mb-0 mt-0 p-0">Instagram: @inmobiliariaacostaydemartini</p> */}
           </div>
           <div className="col-lg-4 contact-footer">
