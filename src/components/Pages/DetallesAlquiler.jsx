@@ -6,6 +6,7 @@ import { MdLocalHotel, MdBathtub, MdKitchen, MdWeekend, MdLocalLaundryService, M
 import '../../assets/DetallesAlquier.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 
 function DetallesAlquiler() {
   const { id } = useParams();
