@@ -12,16 +12,16 @@ function Footer () {
           <div className="col-lg-4">
             <img src="/img/Footer-Logo.png" alt="Logo" className="footer-logo" />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 contact-footer">
           <span className="material-symbols-outlined">
             contacts
             </span>
-            <h5>Contacto</h5>
+            <h5 className="">Contacto</h5>
             <p className="">Teléfono: (+598) 097262731</p>
             <p className="">Email: acostademartinipropiedades@gmail.com</p>
             {/* <p className="mb-0 mt-0 p-0">Instagram: @inmobiliariaacostaydemartini</p> */}
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 contact-footer">
           <span className="material-symbols-outlined">
             location_on
             </span>
@@ -31,7 +31,7 @@ function Footer () {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <hr/>
+            <hr className="dividor-footer-contact"/>
             <p className="footer-text fs-6 d-flex justify-content-center">
               © 2023 Tomas Alex Garcia. Todos los derechos reservados. 
               <Link to="https://www.linkedin.com/in/alex-garcia20" style={{color:"white",textDecoration:"none"}} ><FontAwesomeIcon className="px-2  fs-4" icon={faLinkedin}/> </Link> 
