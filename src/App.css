@@ -105,8 +105,7 @@ body {
         }
       }
     .hero {
-      position: relative;
-      height: calc(100vh - 200px) !important;
+      height: calc(100vh - 300px) !important;
     }
     
     .animated-text{
