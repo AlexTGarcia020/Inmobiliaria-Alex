@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../Footer';
 import NavBar from '../Navbar';
@@ -11,23 +10,6 @@ function Contacto() {
   const [email, setEmail] = useState('');
   const [telefono, setTelefono] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (nombre === '' || apellido === '' || email === '' || telefono === '') {
-      toast.error('Debes completar todos los campos');
-      return;
-    }
-
-    // Aquí puedes agregar la lógica para enviar el formulario a través de Formspree o cualquier otro servicio de envío de correo electrónico
-    console.log('Formulario enviado');
-
-    // Limpiar los campos del formulario después de enviarlo
-    setNombre('');
-    setApellido('');
-    setEmail('');
-    setTelefono('');
-  };
 
   return (
     <div>
@@ -37,7 +19,11 @@ function Contacto() {
           <div className="contact-container">
             <h2 className="contact-title fs-2">¿Te gustaría obtener más información?</h2>
             <p className="fs-6">Completa los siguientes datos para ponernos en contacto.</p>
-            <form className="row g-3 mt-1 contact-form" action="https://formspree.io/f/xaygyvjq" method="POST" onSubmit={handleSubmit}>
+            <form
+              className="row g-3 mt-1 contact-form"
+              action="https://formspree.io/f/xbjvjvdr"
+              method="POST"
+            >
               <div className="col-md-6">
                 <label htmlFor="inputEmail4" className="form-label">
                   Nombre
@@ -120,7 +106,6 @@ function Contacto() {
         </div>
       </div>
       <Footer />
-      <ToastContainer />
     </div>
   );
 }

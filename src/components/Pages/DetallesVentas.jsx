@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from '../Navbar';
 import Footer from '../Footer';
@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 
 function DetallesVentas() {
   const { id } = useParams();
+  const [showImage, setShowImage] = useState(false);
+  const [clickedImage, setClickedImage] = useState('');
 
   const ventas = [
     {
@@ -50,6 +52,15 @@ function DetallesVentas() {
     return <div>Venta no encontrada</div>;
   }
 
+  const openImage = (image) => {
+    setClickedImage(image);
+    setShowImage(true);
+  };
+
+  const closeImage = () => {
+    setShowImage(false);
+  };
+
   return (
     <>
       <NavBar />
@@ -60,35 +71,35 @@ function DetallesVentas() {
             <p className='fs-5'>{venta.precio}</p>
           </div>
           <div className="detalles-alquiler-body">
-          <Carousel
-            showThumbs={false}
-            showStatus={false}
-            showIndicators={false}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            <Carousel
+              showThumbs={false}
+              showStatus={false}
+              showIndicators={false}
+              renderArrowPrev={(onClickHandler, hasPrev, label) =>
                 hasPrev && (
-                <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-prev-arrow">
+                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-prev-arrow">
                     <span className="carousel-arrow-icon">&lt;</span>
-                </button>
+                  </button>
                 )
-            }
-            renderArrowNext={(onClickHandler, hasNext, label) =>
+              }
+              renderArrowNext={(onClickHandler, hasNext, label) =>
                 hasNext && (
-                <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-next-arrow">
+                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-next-arrow">
                     <span className="carousel-arrow-icon">&gt;</span>
-                </button>
+                  </button>
                 )
-            }
-            infiniteLoop={true}
-            renderThumbs={() => null}
+              }
+              infiniteLoop={true}
+              renderThumbs={() => null}
             >
-            <div className="detalles-alquiler-image rounded">
+              <div className="detalles-alquiler-image rounded" onClick={() => openImage(venta.imagen)}>
                 <img className="rounded alquiler-image" src={venta.imagen} alt="" />
-            </div>
-            {venta.imagenesAdicionales.map((imagen, index) => (
-                <div key={index} className="detalles-alquiler-image rounded">
-                <img className="rounded alquiler-image" src={imagen} alt="" />
+              </div>
+              {venta.imagenesAdicionales.map((imagen, index) => (
+                <div key={index} className="detalles-alquiler-image rounded" onClick={() => openImage(imagen)}>
+                  <img className="rounded alquiler-image" src={imagen} alt="" />
                 </div>
-            ))}
+              ))}
             </Carousel>
           </div>
           <div className="detalles-alquiler-details">
@@ -126,14 +137,40 @@ function DetallesVentas() {
             </ul>
             <hr className='mt-3 mb-4'/>
             <div className='d-flex justify-content-center'>
-            <Link to="/Contacto">
-            <button className="button-contacto-over w-100 ms-2">Más Información!</button>
-            </Link>
+              <Link to="/Contacto">
+                <button className="button-contacto-over w-100 ms-2">Más Información!</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      {showImage && (
+        <div className="image-overlay" onClick={closeImage}>
+          <img className="fullscreen-image" src={clickedImage} alt="" />
+        </div>
+      )}
       <Footer />
+      <style>
+        {`
+        .image-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999;
+        }
+
+        .fullscreen-image {
+          max-width: auto;
+          max-height: 225px;
+        }
+        `}
+      </style>
     </>
   );
 }

@@ -37,7 +37,7 @@
     display: inline-block !important;
     height: 300px;
     border-radius: 1.2em 1.2em 0 0;
-    object-fit: fill !important;
+    object-fit: cover !important;
 }
 
 .review-container {

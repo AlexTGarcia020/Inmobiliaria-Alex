@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from '../Navbar';
 import Footer from '../Footer';
@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 
 function DetallesAlquiler() {
   const { id } = useParams();
+  const [showImage, setShowImage] = useState(false);
+  const [clickedImage, setClickedImage] = useState('');
 
   const alquileres = [
     {
@@ -17,7 +19,7 @@ function DetallesAlquiler() {
       nombre: 'Casa En Mendoza Intrucciones',
       precio: '$13.000',
       imagen: '/img/Alquiler-1.jpeg',
-      imagenesAdicionales: ['/img/Alquiler-1-2.jpeg', '/img/Alquiler-1-3.jpeg', '/img/Alquiler-1-4.jpeg'],
+      imagenesAdicionales: ['/img/Alquiler-1-2.jpeg', '/img/Alquiler-1-3.jpeg', '/img/Alquiler-1-4.jpeg', "/img/Alquiler-1-5.jpeg"],
       detalles: 'Excelente opción para inversores...',
       gastos: 'Sin Gastos Comunes',
       dormitorios: '1 Dormitorios',
@@ -34,7 +36,7 @@ function DetallesAlquiler() {
       imagen: '/img/Alquiler-2.jpeg',
       detalles:
         'Es un apto tipo casita, con mucha luz, con una preciosa estufa a leña tradicional Todo el apto con piso flotante y aberturas de aluminio.',
-      imagenesAdicionales: ['/img/Alquiler-2-2.jpeg'],
+      imagenesAdicionales: ['/img/Alquiler-2-2.jpeg', "/img/Alquiler-2-3.jpeg", "/img/Alquiler-2-4.jpeg", "/img/Alquiler-2-5.jpeg", "/img/Alquiler-2-6.jpeg",],
       dormitorios: '2 Dormitorios',
       baños: '1 Baño',
       cocinas: '1 Cocina',
@@ -51,6 +53,15 @@ function DetallesAlquiler() {
     return <div>Alquiler no encontrado</div>;
   }
 
+  const openImage = (image) => {
+    setClickedImage(image);
+    setShowImage(true);
+  };
+
+  const closeImage = () => {
+    setShowImage(false);
+  };
+
   return (
     <>
       <NavBar />
@@ -61,36 +72,36 @@ function DetallesAlquiler() {
             <p className='fs-5'>{alquiler.precio}</p>
           </div>
           <div className="detalles-alquiler-body">
-          <Carousel
-            className='Carrousel-Details'
-            showThumbs={false}
-            showStatus={false}
-            showIndicators={false}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            <Carousel
+              className='Carrousel-Details'
+              showThumbs={false}
+              showStatus={false}
+              showIndicators={false}
+              renderArrowPrev={(onClickHandler, hasPrev, label) =>
                 hasPrev && (
-                <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-prev-arrow">
+                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-prev-arrow">
                     <span className="carousel-arrow-icon">&lt;</span>
-                </button>
+                  </button>
                 )
-            }
-            renderArrowNext={(onClickHandler, hasNext, label) =>
+              }
+              renderArrowNext={(onClickHandler, hasNext, label) =>
                 hasNext && (
-                <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-next-arrow">
+                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-next-arrow">
                     <span className="carousel-arrow-icon">&gt;</span>
-                </button>
+                  </button>
                 )
-            }
-            infiniteLoop={true}
-            renderThumbs={() => null}
+              }
+              infiniteLoop={true}
+              renderThumbs={() => null}
             >
-            <div className="detalles-alquiler-image rounded">
+              <div className="detalles-alquiler-image rounded" onClick={() => openImage(alquiler.imagen)}>
                 <img className="rounded alquiler-image" src={alquiler.imagen} alt="" />
-            </div>
-            {alquiler.imagenesAdicionales.map((imagen, index) => (
-                <div key={index} className="detalles-alquiler-image rounded">
-                <img className="rounded alquiler-image" src={imagen} alt="" />
+              </div>
+              {alquiler.imagenesAdicionales.map((imagen, index) => (
+                <div key={index} className="detalles-alquiler-image rounded" onClick={() => openImage(imagen)}>
+                  <img className="rounded alquiler-image" src={imagen} alt="" />
                 </div>
-            ))}
+              ))}
             </Carousel>
           </div>
           <div className="detalles-alquiler-details">
@@ -128,14 +139,40 @@ function DetallesAlquiler() {
             </ul>
             <hr className='mt-3 mb-4'/>
             <div className='d-flex justify-content-center'>
-            <Link to="/Contacto">
-            <button className="button-contacto-over w-100 ms-2">Más Información!</button>
-            </Link>
+              <Link to="/Contacto">
+                <button className="button-contacto-over w-100 ms-2">Más Información!</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      {showImage && (
+        <div className="image-overlay" onClick={closeImage}>
+          <img className="fullscreen-image" src={clickedImage} alt="" />
+        </div>
+      )}
       <Footer />
+      <style>
+        {`
+        .image-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999;
+        }
+
+        .fullscreen-image {
+          max-width: 90%;
+          max-height: 90%;
+        }
+        `}
+      </style>
     </>
   );
 }

@@ -100,7 +100,7 @@
 
     .button-contacto {
       position: relative;
-      left: 50px;
+      left: 5px;
     }
   }
   
@@ -157,7 +157,7 @@
     }
     .button-contacto {
       padding-right: 12px !important;
-      left: -10px !important;
+      left: 0px !important;
     }
 
     .group-links {
