@@ -14,7 +14,7 @@ function SobreNosotros() {
             <div className="col-12 col-md-6">
               <div className="contact-container">
                 <h1 className="fs-2">Nosotros</h1>
-                <div className="text-contact fs-6">
+                <div className="text-contact fs-6 tracking-in-expand">
                   Acosta y De Martini Propiedades es una empresa líder en el mercado inmobiliario, dedicada a brindar soluciones de calidad y personalizadas para la compra, venta y alquiler de propiedades.<br /> <br />
                   Con un enfoque centrado en la satisfacción del cliente, nos esforzamos por entender las necesidades únicas de cada cliente, ofreciendo soluciones personalizadas que superen sus expectativas.
                 <hr/>
@@ -52,7 +52,7 @@ function SobreNosotros() {
                 <hr className="w-100 p-0 dividor-nosotros"/>
             </div>
             <div className="col-12 col-md-6 contact-container-two">
-              <span className="fs-2">Nos encontramos aqui!</span>
+              <span className="fs-2 text-center">Nos encontramos aqui!</span>
               <div className="image-container" style={{ maxHeight: "100%", maxWidth: "550px" }}>
                 <MyMap />
               </div>

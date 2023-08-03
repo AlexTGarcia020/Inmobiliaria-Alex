@@ -22,13 +22,13 @@ function App() {
       </div>
         <div className="seal-container-two-1">                  
            <Link style={{textDecoration:"none"}} to="/Ventas">
-             <div className="seal">
+             <div className="seal scale-in-center">
                <img className='seal-img-home' src="/img/Home.png" alt="home.icono" />
                  <span className='fs-3'>Ventas</span>
              </div>
             </Link>
             <Link style={{color:"green",textDecoration:"none"}} to="/Alquileres">
-              <div className="seal ms-2">
+              <div className="seal ms-2 scale-in-center">
                 <img className='seal-img-home' src="/img/renta.png" alt="rent.icono" />
                     <span className='fs-3'>Alquileres</span>
               </div>

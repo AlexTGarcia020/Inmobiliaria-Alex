@@ -25,7 +25,7 @@ function VentasList() {
       <div className="container-cards mt-5">
         {ventas.map((venta) => (
           <div key={venta.id} className="container-card-product-all col-md-6 col-lg-4 mb-5 mt-2">
-            <div className="card-product">
+            <div className="card-product scale-in-right">
               <div className="img-product-all">
                 <img
                   className="img-product-all"

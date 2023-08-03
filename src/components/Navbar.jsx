@@ -28,7 +28,7 @@ function NavBar() {
           </span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" className="tracking-in-contract-bck">
           <Nav className="mx-auto group-links fs-5 text-center">
             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
             <Nav.Link as={Link} to="/Ventas">Ventas</Nav.Link>
@@ -36,7 +36,7 @@ function NavBar() {
             <Nav.Link as={Link} to="/Nosotros">Nosotros</Nav.Link>
           </Nav>
           <Link to="/Contacto">
-            <div className="responsive-button">
+            <div className="responsive-button scale-in-top">
             <button className="button-contacto">Contacto<span className="ms-2 fs-5" role="img" aria-label="up-right-arrow">&#8599;</span></button>
             </div>
           </Link>

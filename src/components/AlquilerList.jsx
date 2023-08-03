@@ -22,8 +22,9 @@ function AlquilerList() {
     <>
       <div className="container-cards mt-5">
         {alquileres.map((alquiler) => (
-          <div className="container-card-product-all mb-5 mt-2" key={alquiler.id}>
-            <div className="card-product">
+          <div className="container-card-product-all
+          mb-5 mt-2" key={alquiler.id}>
+            <div className="card-product scale-in-right">
               <div className="img-product-all">
                 <img
                   className="img-product-all"
