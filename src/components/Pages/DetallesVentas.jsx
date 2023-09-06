@@ -53,11 +53,11 @@ function DetallesVentas() {
       detalles: 'Descripción del producto 2',
       dormitorios: '4 Dormitorios',
       baños: '4 Baño',
-      cocinas: '1 Cocina',
+      cocinas: '2 Cocina',
       livings: '2 Living Comedor',
-      patios: 'Patio Pequeño',
+      patios: 'Patio Grande',
       gastos: 'Sin Gastos Comunes',
-      salas: '-',
+      salas: '1 Sala',
     },
   ];
 
