@@ -49,7 +49,7 @@ function DetallesVentas() {
       nombre: 'Casa Piedras Blancas',
       precio: 'U$S79.900',
       imagen: '/img/Casa-3-1.jpeg',
-      imagenesAdicionales: ['/img/Casa-3-2.jpg',"/img/Casa-3-3.jpg","/img/Casa-3-4.jpg","/img/Casa-3-5.jpg","/img/Casa-3-6.jpg","/img/Casa-3-7.jpg","/img/Casa-3-8.jpg","/img/Casa-3-9.jpg","/img/Casa-3-10.jpg","/img/Casa-3-11.jpg"],
+      imagenesAdicionales: ['/img/Casa-3-2.jpeg',"/img/Casa-3-3.jpeg","/img/Casa-3-4.jpeg","/img/Casa-3-5.jpeg","/img/Casa-3-6.jpeg","/img/Casa-3-7.jpeg","/img/Casa-3-8.jpeg","/img/Casa-3-9.jpeg","/img/Casa-3-10.jpeg","/img/Casa-3-11.jpeg"],
       detalles: 'Descripción del producto 2',
       dormitorios: '4 Dormitorios',
       baños: '4 Baño',
