@@ -21,7 +21,7 @@ function VentasList() {
     {
       id: 3,
       nombre: "Casa Piedras Blancas",
-      precio: "U$S79.000",
+      precio: "U$S79.900",
       imagen: "/img/Casa-3-1.jpeg",
       detalles: "Descripción del producto 3",
     },

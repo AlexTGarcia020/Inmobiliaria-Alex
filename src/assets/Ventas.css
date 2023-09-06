@@ -3,8 +3,8 @@
     place-items: center;
     height: 30em;
     margin: 0rem;
-    flex-basis: calc(23.33% - 1rem);
-    max-width: calc(23.33% - 1rem); 
+    flex-basis: calc(33.33% - 2rem) !important;
+    max-width: calc(29.33% - 1rem); 
 }
 
 .card-product {
