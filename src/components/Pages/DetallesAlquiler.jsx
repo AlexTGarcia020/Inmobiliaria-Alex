@@ -47,7 +47,7 @@ function DetallesAlquiler() {
     },
     {
       id: 3,
-      nombre: 'Casa En Piedras Blancas',
+      nombre: 'Apartamento En Piedras Blancas',
       precio: '$7.000',
       imagen: '/img/Casa-3-1.jpeg',
       detalles:
@@ -63,7 +63,7 @@ function DetallesAlquiler() {
     },
     {
       id: 4,
-      nombre: 'Casa En Piedras Blancas',
+      nombre: 'Apartamento 4 ambientes En Piedras Blancas',
       precio: '$8.000',
       imagen: '/img/Casa-3-1.jpeg',
       detalles:
