@@ -16,6 +16,18 @@ function AlquilerList() {
       precio: "$18.000",
       imagen: "/img/Alquiler-2.jpeg",
     },
+    {
+      id: 3,
+      nombre: "Casa Piedras Blancas",
+      precio: "$7.000",
+      imagen: "/img/Casa-3-1.jpeg",
+    },
+    {
+      id: 4,
+      nombre: "Casa Piedras Blancas",
+      precio: "$8.000",
+      imagen: "/img/Casa-3-1.jpeg",
+    },
   ];
 
   return (

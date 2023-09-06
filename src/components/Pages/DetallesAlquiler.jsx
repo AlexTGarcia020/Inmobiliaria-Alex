@@ -45,6 +45,38 @@ function DetallesAlquiler() {
       gastos: 'Sin Gastos Comunes',
       salas: '-',
     },
+    {
+      id: 3,
+      nombre: 'Casa En Piedras Blancas',
+      precio: '$7.000',
+      imagen: '/img/Casa-3-1.jpeg',
+      detalles:
+        'Es un casita, con 1 dormitorio, cocina y baño. En una linda zona.',
+      imagenesAdicionales: ['/img/Casa-3-11.jpeg', "/img/Casa-3-10.jpeg", "/img/Casa-3-9.jpeg",],
+      dormitorios: '1 Dormitorios',
+      baños: '1 Baño',
+      cocinas: '1 Cocina',
+      livings: '-',
+      patios: '-',
+      gastos: 'Sin Gastos Comunes',
+      salas: '-',
+    },
+    {
+      id: 4,
+      nombre: 'Casa En Piedras Blancas',
+      precio: '$8.000',
+      imagen: '/img/Casa-3-1.jpeg',
+      detalles:
+        'Es un casita, con 1 dormitorio, cocina, baño y 1 comedor. En una linda zona.',
+      imagenesAdicionales: ['/img/Casa-3-7.jpeg', '/img/Casa-3-6.jpeg', "/img/Casa-3-5.jpeg", "/img/Casa-3-4.jpeg",],
+      dormitorios: '1 Dormitorios',
+      baños: '1 Baño',
+      cocinas: '1 Cocina',
+      livings: '1 Comedor',
+      patios: '-',
+      gastos: 'Sin Gastos Comunes',
+      salas: '-',
+    },
   ];
 
   const alquiler = alquileres.find((alquiler) => alquiler.id.toString() === id);
