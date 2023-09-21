@@ -28,6 +28,12 @@ function AlquilerList() {
       precio: "$8.000",
       imagen: "/img/Casa-3-1.jpeg",
     },
+    {
+      id: 5,
+      nombre: "Alquiler Casa Capitan Tula",
+      precio: "$16.500",
+      imagen: "/Alquier-5-1.jpg",
+    },
   ];
 
   return (

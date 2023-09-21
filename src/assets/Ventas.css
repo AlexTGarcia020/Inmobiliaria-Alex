@@ -129,17 +129,19 @@
   }
 
   
-@media (min-width: 1000px) {
+@media (max-width: 1400px) {
 
     .container-cards {
         position: relative !important;
+        gap: 11rem;
         padding-right: 10px !important;
-        display: flex !important;
-        gap: 60px !important;
+        padding-bottom: -60px  !important;
+    
     }
     .card-product {
-        width: 350px !important;
-        gap: 60px !important;  
+        padding: 0;
+        margin: 0;
+        width: 350px !important; 
     }
     .review-container{
         font-size: 15px;
