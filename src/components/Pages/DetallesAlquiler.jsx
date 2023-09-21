@@ -77,6 +77,22 @@ function DetallesAlquiler() {
       gastos: 'Sin Gastos Comunes',
       salas: '-',
     },
+    {
+      id: 5,
+      nombre: 'Alquiler Casa Capitan Tula 2 Dormitorios',
+      precio: '$16.500',
+      imagen: '/img/Alquiler-5-3.jpg',
+      detalles:
+        'Es un casa, con 2 dormitorio, cocina, baño, sala de lavado, galpòn, techito para los autos, parrilero, y patio. En una linda zona.',
+      imagenesAdicionales: ['/img/Alquiler-5-2.jpg', '/img/Alquiler-5-1.jpg', '/img/Alquiler-5-4.jpg', '/img/Alquiler-5-5.jpg', '/img/Alquiler-5-6.jpg', '/img/Alquiler-5-7.jpg', '/img/Alquiler-5-8.jpg', '/img/Alquiler-5-19.jpg', '/img/Alquiler-5-9.jpg', '/img/Alquiler-5-10.jpg', '/img/Alquiler-5-11.jpg', '/img/Alquiler-5-12.jpg', ],
+      dormitorios: '2 Dormitorios',
+      baños: '1 Baño',
+      cocinas: '1 Cocina',
+      livings: '1 Comedor',
+      patios: '1 patio',
+      gastos: 'Sin Gastos Comunes',
+      salas: 'Parrilero - Galpon - Sala de Lavado',
+    },
   ];
 
   const alquiler = alquileres.find((alquiler) => alquiler.id.toString() === id);
