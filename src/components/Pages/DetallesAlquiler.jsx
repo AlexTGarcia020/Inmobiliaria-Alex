@@ -93,6 +93,22 @@ function DetallesAlquiler() {
       gastos: 'Sin Gastos Comunes',
       salas: 'Parrilero - Galpon - Sala de Lavado',
     },
+    {
+      id: 6,
+      nombre: 'Alquiler Casa Apartamento A Estrenar En Mendoza Y Linneo A Metros De La Perimetral 102',
+      precio: '$19.000',
+      imagen: '/img/Alquiler6.jpg',
+      detalles:
+        'Disfruta del Verde de Montevideo a Pasos de la Ciudad Casa de 5 ambientes tipo "duplex" recién construida.',
+      imagenesAdicionales: ['/img/Alquiler-6.1.jpg', '/img/Alquiler-6.2.jpg', '/img/Alquiler-6.3.jpg', '/img/Alquiler-6.4.jpg', '/img/Alquiler-6.5.jpg', '/img/Alquiler-6.6.jpg', '/img/Alquiler-6.7.jpg', '/img/Alquiler-6.8.jpg',],
+      dormitorios: '2 Dormitorios',
+      baños: '1 Baño',
+      cocinas: '1 Cocina',
+      livings: '1 Comedor',
+      patios: '1 Jardin',
+      gastos: 'Sin Gastos Comunes',
+      salas: '-',
+    },
   ];
 
   const alquiler = alquileres.find((alquiler) => alquiler.id.toString() === id);

@@ -34,6 +34,12 @@ function AlquilerList() {
       precio: "$16.500",
       imagen: "/img/Alquiler-5-3.jpg",
     },
+    {
+      id: 6,
+      nombre: "Alquiler Casa Apartamento A Estrenar En Mendoza Y Linneo A Metros De La Perimetral 102",
+      precio: "$19.000",
+      imagen: "/img/Alquiler-6.jpg",
+    },
   ];
 
   return (
