@@ -44,21 +44,6 @@ function DetallesVentas() {
       gastos: 'Sin Gastos Comunes',
       salas: '-',
     },
-    {
-      id: 3,
-      nombre: 'Casa Piedras Blancas',
-      precio: 'U$S79.900',
-      imagen: '/img/Casa-3-1.jpeg',
-      imagenesAdicionales: ['/img/Casa-3-2.jpeg',"/img/Casa-3-3.jpeg","/img/Casa-3-4.jpeg","/img/Casa-3-5.jpeg","/img/Casa-3-6.jpeg","/img/Casa-3-7.jpeg","/img/Casa-3-8.jpeg","/img/Casa-3-9.jpeg","/img/Casa-3-10.jpeg","/img/Casa-3-11.jpeg"],
-      detalles: 'Descripción del producto 2',
-      dormitorios: '4 Dormitorios',
-      baños: '4 Baño',
-      cocinas: '-',
-      livings: '-',
-      patios: 'Patio Grande',
-      gastos: 'Sin Gastos Comunes',
-      salas: '-',
-    },
   ];
 
   const venta = ventas.find((venta) => venta.id.toString() === id);
