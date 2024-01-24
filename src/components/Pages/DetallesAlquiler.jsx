@@ -63,9 +63,9 @@ function DetallesAlquiler() {
     },
     {
       id: 6,
-      nombre: 'Alquiler Casa Apartamento A Estrenar En Mendoza Y Linneo A Metros De La Perimetral 102',
+      nombre: 'Alquiler Casa Apartamento Nuevo En Mendoza Y Linneo Metros De Perimetral 102',
       precio: '$19.000',
-      imagen: '/img/Alquiler6.jpg',
+      imagen: '/img/Alquiler-6.jpg',
       detalles:
         'Disfruta del Verde de Montevideo a Pasos de la Ciudad Casa de 5 ambientes tipo "duplex" recién construida.',
       imagenesAdicionales: ['/img/Alquiler-6.1.jpg', '/img/Alquiler-6.2.jpg', '/img/Alquiler-6.3.jpg', '/img/Alquiler-6.4.jpg', '/img/Alquiler-6.5.jpg', '/img/Alquiler-6.6.jpg', '/img/Alquiler-6.7.jpg', '/img/Alquiler-6.8.jpg',],
