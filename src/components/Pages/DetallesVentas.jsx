@@ -48,7 +48,7 @@ function DetallesVentas() {
       id: 3,
       nombre: 'Casa Gran Esquina Brazo Oriental Cerca De Av. Luis Alberto De Herrera Y Av. San Martín',
       precio: 'U$S259.000',
-      imagen: '/img/Casa-4-1.jpeg',
+      imagen: '/img/Casa-4-1.jpg',
       imagenesAdicionales: ['/img/Casa-4-2.jpg',"/img/Casa-4-3.jpg","/img/Casa-4-4.jpg","/img/Casa-4-5.jpg","/img/Casa-4-6.jpg","/img/Casa-4-7.jpg","/img/Casa-4-8.jpg","/img/Casa-4-9.jpg","/img/Casa-4-10.jpg","/img/Casa-4-11.jpg","/img/Casa-4-12.jpg","/img/Casa-4-13.jpg","/img/Casa-4-14.jpg","/img/Casa-4-15.jpg"],
       detalles: 'Casa En Venta Gran Esquina Brazo Oriental a 1 Cuadra de Av. Luis Alberto De Herrera y 2 Cuadras de Av. San Martín      ',
       dormitorios: '3 Dormitorios',
