@@ -34,14 +34,14 @@ function VentasList() {
     },
     {
       id: 5,
-      nombre: "Casa En Venta Av. Don Pedro De Mendoza E Instrucciones 949m²",
+      nombre: "Casa En Venta Av. Don Pedro De Mendoza 949m²",
       precio: "U$S120.000",
       imagen: "/img/Casa-6-1.jpg",
       detalles: "Descripción del producto 3",
     },
     {
       id: 6,
-      nombre: "Venta De Apartamento 2 Dormitorios En La Blanqueada",
+      nombre: "Venta De Apartamento En La Blanqueada",
       precio: "U$S165.000",
       imagen: "/img/Casa-7-1.jpg",
       detalles: "Descripción del producto 3",

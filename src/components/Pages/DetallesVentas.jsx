@@ -90,7 +90,7 @@ function DetallesVentas() {
       salas: '2 Garajes',
     },
     {
-      id: 5,
+      id: 6,
       nombre: 'Gran Oportunidad Casa En Venta Avenida Don Pedro de Mendoza a Pasos de Avenida de las Instrucciones',
       precio: 'U$S165.000',
       imagen: '/img/Casa-7-1.jpg',
