@@ -5,40 +5,16 @@ import '../assets/DetallesAlquier.css';
 function AlquilerList() {
   const alquileres = [
     {
-      id: 1,
-      nombre: "Casa En Mendoza Intrucciones",
-      precio: "$13.000",
-      imagen: "/img/Alquiler-1.jpeg",
-    },
-    {
-      id: 2,
-      nombre: "Casa En Mendoza Intrucciones",
-      precio: "$18.000",
-      imagen: "/img/Alquiler-2.jpeg",
-    },
-    {
-      id: 3,
-      nombre: "Apartamento Piedras Blancas",
-      precio: "$7.000",
-      imagen: "/img/Casa-3-1.jpeg",
-    },
-    {
-      id: 4,
-      nombre: "Apartamento 4 Ambientes",
-      precio: "$8.000",
-      imagen: "/img/Casa-3-1.jpeg",
-    },
-    {
-      id: 5,
-      nombre: "Alquiler Casa Capitan Tula",
-      precio: "$16.500",
-      imagen: "/img/Alquiler-5-3.jpg",
-    },
-    {
       id: 6,
       nombre: "Alquiler Casa Apartamento A Estrenar En Mendoza Y Linneo A Metros De La Perimetral 102",
-      precio: "$19.000",
+      precio: "$18.000",
       imagen: "/img/Alquiler-6.jpg",
+    },
+    {
+      id: 7,
+      nombre: "Alquiler Apartamento A Estrenar 2 Dormitorios En Mendoza Y Capitan Tula",
+      precio: "$20.000",
+      imagen: "/img/Alquiler-7.jpg",
     },
   ];
 

@@ -25,6 +25,27 @@ function VentasList() {
       imagen: "/img/Casa-4-1.jpg",
       detalles: "Descripción del producto 3",
     },
+    {
+      id: 4,
+      nombre: "Apartamento a Estrenar Aguada",
+      precio: "U$S145.000",
+      imagen: "/img/Casa-5-1.jpg",
+      detalles: "Descripción del producto 3",
+    },
+    {
+      id: 5,
+      nombre: "Casa En Venta Av. Don Pedro De Mendoza E Instrucciones 949m²",
+      precio: "U$S120.000",
+      imagen: "/img/Casa-6-1.jpg",
+      detalles: "Descripción del producto 3",
+    },
+    {
+      id: 6,
+      nombre: "Venta De Apartamento 2 Dormitorios En La Blanqueada",
+      precio: "U$S165.000",
+      imagen: "/img/Casa-7-1.jpg",
+      detalles: "Descripción del producto 3",
+    },
   ];
 
   return (
